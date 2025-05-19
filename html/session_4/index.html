@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignemnt 4</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <form action="result.html">
+        <!-- Gender -->
+        <label>Gender</label>
+        <input type="radio" id="male" value="man" name="gender" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="woman" name="gender" />
+        <label for="female">Female</label>
+        <br />
+        <br />
+        <!-- Sports -->
+        <label>Fav Sport</label>
+        <input type="checkbox" name="sport" value="football" checked />
+        <label>Football</label>
+        <input type="checkbox" name="sport" value="basketball" disabled />
+        <label>Basketball</label>
+        <input type="checkbox" name="sport" value="volleyball" />
+        <label>Volleyball</label>
+        <input type="checkbox" name="sport" value="tennis" />
+        <label>Tennis</label>
+        <br />
+        <br />
+        <!-- CV -->
+        <label>Upload cv</label>
+        <input type="file" name="cv" multiple />
+        <br />
+        <br />
+        <!-- Range -->
+        <label>Price</label>
+        <input type="range" name="price" min="0" max="100" value="0" />
+        <br />
+        <br />
+        <!-- Quantity -->
+        <label>quantity</label>
+        <input
+          type="quantity"
+          name="quantity"
+          min="2"
+          max="10"
+          step="2"
+          value="4"
+        />
+        <br />
+        <br />
+        <!-- Color -->
+        <label>Favourite color</label>
+        <input type="color" name="color" />
+        <br />
+        <br />
+        <!-- Date -->
+        <label>Birthday</label>
+        <input type="date" name="date" min="2025-01-01" max="2025-5-19" />
+        <input type="month" name="month" />
+        <input type="week" name="week" />
+        <input type="datetime-local" name="time" />
+        <br />
+        <br />
+        <!-- Country -->
+        <label>Country</label>
+        <select name="country">
+          <option>Rome</option>
+          <option>Spain</option>
+          <option selected>Egypt</option>
+          <option>Canada</option>
+          <option>Turkey</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="login" />
+        <input type="reset" />
+      </form>
+    </fieldset>
+  </body>
+</html>
